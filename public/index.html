@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>21162101007_kshitijgupta_Practical-2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "dc86da37-8163-468c-87a6-dc8fa183315d", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "66b509e2-1497-4090-b139-fe4e05f90ee9", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  
+  <h2 class="moj" style="border: 2px solid Tomato;">Kshitij Gupta</h2>
+
+  <div class="container">
+    <div class="lightbulb" id="bulb"></div>
+    <div class="button-container">
+      <button id="onBtn">Turn ON</button>
+      <button id="offBtn">Turn OFF</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
